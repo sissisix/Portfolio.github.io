@@ -10,6 +10,7 @@
         <link href="style.css" rel="stylesheet" type="text/css">
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <script src="script.js" type="text/javascript"></script>
+        <script src="projet.js" type="text/javascript"></script>
     </head>
     <body class="realBody">
         <header id="header"></header>
@@ -18,57 +19,57 @@
         <table class="real">
             <tr class="realTr">
                 <td class="realTd">
-                    <img src="Icn_EquipeExplore.png" alt="Avatar" onclick="qget('EquipeExplore')"></img>
+                    <img src="Icn_EquipeExplore.png" alt="Avatar" onclick="qget('0')"></img>
                 </td>
                 <td class="realTd">
-                    <img src="Icn_Youstiti.png" alt="Avatar" onclick="qget('Youstiti')"></img>
+                    <img src="Icn_Youstiti.png" alt="Avatar" onclick="qget('1')"></img>
                 </td>
                 <td class="realTd">
-                    <img src="Icn_Ulr.png" alt="Avatar" onclick="qget('Ulr')"></img>
-                </td>
-            </tr>
-            <tr class="realTr">
-                <td class="realTd">
-                    <img src="Icn_Snake.png" alt="Avatar" onclick="qget('Snake')"></img>
-                </td>
-                <td class="realTd">
-                    <img src="Icn_Tetris.png" alt="Avatar" onclick="qget('Tetris')"></img>
-                </td>
-                <td class="realTd">
-                    <img src="Icn_Hamster.png" alt="Avatar" onclick="qget('Hamster')"></img>
+                    <img src="Icn_Ulr.png" alt="Avatar" onclick="qget('2')"></img>
                 </td>
             </tr>
             <tr class="realTr">
                 <td class="realTd">
-                    <img src="Icn_PvsC.png" alt="Avatar" onclick="qget('PvcC')"></img>
+                    <img src="Icn_Snake.png" alt="Avatar" onclick="qget('3')"></img>
                 </td>
                 <td class="realTd">
-                    <img src="Icn_Chance.png" alt="Avatar" onclick="qget('Chance')"></img>
+                    <img src="Icn_Tetris.png" alt="Avatar" onclick="qget('4')"></img>
                 </td>
                 <td class="realTd">
-                    <img src="Icn_Light.png" alt="Avatar" onclick="qget('Light')"></img>
-                </td>
-            </tr>
-            <tr class="realTr">
-                <td class="realTd">
-                    <img src="Icn_Run.png" alt="Avatar" onclick="qget('Run')"></img>
-                </td>
-                <td class="realTd">
-                    <img src="Icn_Space.png" alt="Avatar" onclick="qget('Space')"></img>
-                </td>
-                <td class="realTd">
-                    <img src="Icn_Metro.png" alt="Avatar" onclick="qget('Metro')"></img>
+                    <img src="Icn_Hamster.png" alt="Avatar" onclick="qget('5')"></img>
                 </td>
             </tr>
             <tr class="realTr">
                 <td class="realTd">
-                    <img src="Icn_Square.png" alt="Avatar" onclick="qget('Square')"></img>
+                    <img src="Icn_PvsC.png" alt="Avatar" onclick="qget('6')"></img>
                 </td>
                 <td class="realTd">
-                    <img src="Icn_Vent.png" alt="Avatar" onclick="qget('Vent')"></img>
+                    <img src="Icn_Chance.png" alt="Avatar" onclick="qget('7')"></img>
                 </td>
                 <td class="realTd">
-                    <img src="Icn_FleurEdf.png" alt="Avatar" onclick="qget('FleurEdf')"></img>
+                    <img src="Icn_Light.png" alt="Avatar" onclick="qget('8')"></img>
+                </td>
+            </tr>
+            <tr class="realTr">
+                <td class="realTd">
+                    <img src="Icn_Run.png" alt="Avatar" onclick="qget('9')"></img>
+                </td>
+                <td class="realTd">
+                    <img src="Icn_Space.png" alt="Avatar" onclick="qget('10')"></img>
+                </td>
+                <td class="realTd">
+                    <img src="Icn_Metro.png" alt="Avatar" onclick="qget('11')"></img>
+                </td>
+            </tr>
+            <tr class="realTr">
+                <td class="realTd">
+                    <img src="Icn_Square.png" alt="Avatar" onclick="qget('12')"></img>
+                </td>
+                <td class="realTd">
+                    <img src="Icn_Vent.png" alt="Avatar" onclick="qget('13')"></img>
+                </td>
+                <td class="realTd">
+                    <img src="Icn_FleurEdf.png" alt="Avatar" onclick="qget('14')"></img>
                 </td>
             </tr>
         </table>
@@ -77,14 +78,13 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close">&times;</span>
-                    <h2>Modal Header</h2>
+                    <h2 id="modalTitle">Modal Header</h2>
                 </div>
                 <div class="modal-body">
-                    <p>Some text in the Modal Body</p>
-                    <p>Some other text...</p>
+                    <p id="modalBody">Some text in the Modal Body</p>
                 </div>
                 <div class="modal-footer">
-                    <h3>Modal Footer</h3>
+                    <h3 id="modalFooter">Modal Footer</h3>
                 </div>
             </div>
         </div>
@@ -99,7 +99,11 @@
 
     <script>
         var modal = document.getElementById("myModal");
+        var modalTitle = document.getElementById("modalTitle");
+        var modalBody = document.getElementById("modalBody");
+        var modalFooter = document.getElementById("modalFooter");
 
+        //console.log(proj.projets[0].name);
         // Get the button that opens the modal
         //var btn = document.getElementById("myBtn");
 
@@ -124,6 +128,10 @@
         }
 
         function qget(param) {
+            modalTitle.innerHTML = proj.projets[param].name;
+            modalBody.innerHTML = proj.projets[param].description;
+            modalFooter.innerHTML = "";
+            
             modal.style.display = "block";
             /*var data = new URLSearchParams();
             data.append("real", param);
