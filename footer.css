@@ -1,0 +1,31 @@
+.footerP {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+p {
+    font-size: 19px;
+}
+
+.realFooter {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 15px;
+}
+
+th {
+    width: 50%;
+    font-size: 22px;
+}
+
+.tdFooter {
+    vertical-align: text-top;
+}
+
+thead {
+    height: 80px;
+}

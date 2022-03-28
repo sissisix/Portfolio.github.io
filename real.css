@@ -1,0 +1,46 @@
+*{
+    background-color: #D9D9D9;
+    font-family: 'Mukta', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #1B363E;
+}
+
+.real {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.realTd img {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    max-width: 150%;
+    max-height: 150%;
+}
+
+.real .realTr {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.realTd:hover img {
+    filter: drop-shadow(0 -6mm 4mm rgb(238, 199, 153));
+    cursor: pointer;
+}
+
+.realTr {
+    margin-top: 20px;
+}
+
+.realTd {
+    padding-left: 20px;
+    padding-right: 20px;
+}
