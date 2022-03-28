@@ -34,7 +34,6 @@
 .headerMenu a {
     display: grid;
     text-decoration: none;
-    color: #1B363E;
     border-bottom: 0px solid transparent;
     height: 100%;
     align-items: center;
