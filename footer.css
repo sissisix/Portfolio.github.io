@@ -3,12 +3,17 @@
     margin-top: 20px;
 }
 
-h2 {
+.footerH2 {
+    margin-bottom: 10px;
+    text-align: center;
     margin-top: 10px;
 }
 
-p {
-    font-size: 19px;
+.footerP {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 13px;
 }
 
 .realFooter {
