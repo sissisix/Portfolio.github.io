@@ -82,9 +82,13 @@
                 </div>
                 <div class="modal-body">
                     <p id="modalBody">Some text in the Modal Body</p>
+                    <img id="modalImg" class="modal-img" src=""></img>
+                    <video id="modalVideo" controls class="modal-vid">
+                        
+                    </video>
                 </div>
                 <div class="modal-footer">
-                    <h3 id="modalFooter">Modal Footer</h3>
+                    <h4 id="modalFooter">Modal Footer</h3>
                 </div>
             </div>
         </div>
@@ -101,19 +105,15 @@
         var modal = document.getElementById("myModal");
         var modalTitle = document.getElementById("modalTitle");
         var modalBody = document.getElementById("modalBody");
+        var modalImg = document.getElementById("modalImg");
+        var modalVideo = document.getElementById("modalVideo");
         var modalFooter = document.getElementById("modalFooter");
 
-        //console.log(proj.projets[0].name);
         // Get the button that opens the modal
         //var btn = document.getElementById("myBtn");
 
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on the button, open the modal
-        /*btn.onclick = function() {
-            modal.style.display = "block";
-        }*/
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
@@ -130,14 +130,23 @@
         function qget(param) {
             modalTitle.innerHTML = proj.projets[param].name;
             modalBody.innerHTML = proj.projets[param].description;
-            modalFooter.innerHTML = "";
+            modalImg.src = proj.projets[param].imgUrl;
+
+            if (proj.projets[param].vidUrl != "") {
+                var source = document.createElement('source');
+                source.setAttribute('src', proj.projets[param].vidUrl);
+                source.setAttribute('type', 'video/mp4');
+                modalVideo.appendChild(source);
+                modalVideo.style.height = "initial";
+                modalVideo.style.visibility = "visible";
+            } else {
+                modalVideo.style.visibility = "hidden";
+                modalVideo.style.height = "0px";
+            }
+            
+            modalFooter.innerHTML = proj.projets[param].date + "<br>" + proj.projets[param].footer;
             
             modal.style.display = "block";
-            /*var data = new URLSearchParams();
-            data.append("real", param);
-
-            var url = "file:///home/simon/Documents/Travail/Portfolio/info.html?" + data.toString();
-            location.href = url;*/
         }
     </script>
 </html>

@@ -70,12 +70,28 @@ h1 {
 
 /* Modal Header */
 .modal-header {
+    margin-top: 16px;
     padding: 2px 16px;
 }
   
 /* Modal Body */
 .modal-body {
     padding: 2px 16px;
+}
+
+.modal-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.modal-vid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 }
   
 /* Modal Footer */
