@@ -165,7 +165,7 @@ var proj = {
             "imgUrl": "FleurEdf.png",
             "imgIcUrl": "Icn_FleurEdf.png",
             "vidUrl": "FleurEdf.mp4",
-            "gifUrl": "",
+            "gifUrl": "FleurEdf.gif",
             "footer": ""
         }
     ]
@@ -183,7 +183,14 @@ function initProj() {
         td.setAttribute('class', 'realTd');
 
         img = document.createElement('img');
-        img.setAttribute('src', proj.projets[i].imgIcUrl);
+
+        if (proj.projets[i].gifUrl != "") {
+            img.setAttribute('src', proj.projets[i].gifUrl);
+        } else {
+            img.setAttribute('src', proj.projets[i].imgIcUrl);
+        }
+
+        //img.setAttribute('src', proj.projets[i].imgIcUrl);
         img.setAttribute('alt', 'Avatar');
         img.setAttribute('onclick', 'qget(\'' + i + '\')');
 
