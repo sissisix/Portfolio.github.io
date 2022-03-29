@@ -16,63 +16,7 @@
         <header id="header"></header>
         <h1>Mes projets</h1>
         
-        <table class="real">
-            <tr class="realTr">
-                <td class="realTd">
-                    <img src="Icn_EquipeExplore.png" alt="Avatar" onclick="qget('0')"></img>
-                </td>
-                <td class="realTd">
-                    <img src="Icn_Youstiti.png" alt="Avatar" onclick="qget('1')"></img>
-                </td>
-                <td class="realTd">
-                    <img src="Icn_Ulr.png" alt="Avatar" onclick="qget('2')"></img>
-                </td>
-            </tr>
-            <tr class="realTr">
-                <td class="realTd">
-                    <img src="Icn_Snake.png" alt="Avatar" onclick="qget('3')"></img>
-                </td>
-                <td class="realTd">
-                    <img src="Icn_Tetris.png" alt="Avatar" onclick="qget('4')"></img>
-                </td>
-                <td class="realTd">
-                    <img src="Icn_Hamster.png" alt="Avatar" onclick="qget('5')"></img>
-                </td>
-            </tr>
-            <tr class="realTr">
-                <td class="realTd">
-                    <img src="Icn_PvsC.png" alt="Avatar" onclick="qget('6')"></img>
-                </td>
-                <td class="realTd">
-                    <img src="Icn_Chance.png" alt="Avatar" onclick="qget('7')"></img>
-                </td>
-                <td class="realTd">
-                    <img src="Icn_Light.png" alt="Avatar" onclick="qget('8')"></img>
-                </td>
-            </tr>
-            <tr class="realTr">
-                <td class="realTd">
-                    <img src="Icn_Run.png" alt="Avatar" onclick="qget('9')"></img>
-                </td>
-                <td class="realTd">
-                    <img src="Icn_Space.png" alt="Avatar" onclick="qget('10')"></img>
-                </td>
-                <td class="realTd">
-                    <img src="Icn_Metro.png" alt="Avatar" onclick="qget('11')"></img>
-                </td>
-            </tr>
-            <tr class="realTr">
-                <td class="realTd">
-                    <img src="Icn_Square.png" alt="Avatar" onclick="qget('12')"></img>
-                </td>
-                <td class="realTd">
-                    <img src="Icn_Vent.png" alt="Avatar" onclick="qget('13')"></img>
-                </td>
-                <td class="realTd">
-                    <img src="Icn_FleurEdf.png" alt="Avatar" onclick="qget('14')"></img>
-                </td>
-            </tr>
-        </table>
+        <table id="tableProjs" class="real"></table>
 
         <div id="myModal" class="modal">
             <div class="modal-content">
@@ -102,6 +46,7 @@
     </body>
 
     <script>
+        initProj();
         var modal = document.getElementById("myModal");
         var modalTitle = document.getElementById("modalTitle");
         var modalBody = document.getElementById("modalBody");

@@ -170,3 +170,34 @@ var proj = {
         }
     ]
 }
+
+function initProj() {
+    var tab = document.getElementById("tableProjs");
+    var tr = document.createElement('tr');
+    tr.setAttribute('class', 'realTr');
+    var td;
+    var img;
+
+    for (i = 0; i < proj.projets.length; i++) {
+        td = document.createElement('td');
+        td.setAttribute('class', 'realTd');
+
+        img = document.createElement('img');
+        img.setAttribute('src', proj.projets[i].imgIcUrl);
+        img.setAttribute('alt', 'Avatar');
+        img.setAttribute('onclick', 'qget(\'' + i + '\')');
+
+        td.appendChild(img);
+        tr.appendChild(td);
+
+        if ((i+1)%3 == 0) {
+            tab.appendChild(tr);
+            tr = document.createElement('tr');
+            tr.setAttribute('class', 'realTr');
+        }
+    }
+
+    if ((proj.projets.length+1)%3 != 0) {
+        tab.appendChild(tr);
+    }
+}
