@@ -197,14 +197,14 @@ function initProj() {
         td.appendChild(img);
         tr.appendChild(td);
 
-        if ((i+1)%3 == 0) {
+        if ((i+1)%5 == 0) {
             tab.appendChild(tr);
             tr = document.createElement('tr');
             tr.setAttribute('class', 'realTr');
         }
     }
 
-    if ((proj.projets.length+1)%3 != 0) {
+    if ((proj.projets.length+1)%5 != 0) {
         tab.appendChild(tr);
     }
 }

@@ -3,15 +3,33 @@
     <head>
         <meta charset="utf-8"></meta>
         <link href="header.css" rel="stylesheet" type="text/css"></link>
+
+        <script>
+            function goTo(direc) {
+                switch(direc) {
+                    case 0:
+                        window.location.href = "real.html";
+                        break;
+                    case 1:
+                        window.location.href = "index.html";
+                        break;
+                    default:
+                        break;
+                }
+            }
+        </script>
     </head>
     <body>
-        <table class="headerMenu">
-            <tr class="headerRow">
-                <td class="headerColumn" style="width: 10%;">
-                    <a href="index.html"><img src="Icn_Kate_WALKER.png" alt="Avatar"></img></a>
+        <table class="headerMenu2">
+            <tr class="headerRow2">
+                <td class="headerColumn2" style="width: 45%;" onclick="goTo(0)">
+                    <p>Projets</p>
                 </td>
-                <td class="headerColumn" style="width: 90%;">
-                    <a href="real.html">Projets</a>
+                <td class="headerColumn2" style="width: 10%;" onclick="goTo(1)">
+                    <img src="Icn_Kate_WALKER.png" alt="Avatar"></img>
+                </td>
+                <td class="headerColumn2" style="width: 45%;" onclick="goTo(0)">
+                    <p>Projets</p>
                 </td>
             </tr>
         </table>
