@@ -17,11 +17,11 @@ html, body {
 
 .wrapper {
     min-height: 100%;
-    margin-bottom: -100px;
+    margin-bottom: -206px;
 }
 
 .footer, .push {
-    height: 100px;
+    height: 206px;
 }
 
 body {
