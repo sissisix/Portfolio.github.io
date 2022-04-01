@@ -9,3 +9,17 @@ footer {
     margin-top: 30px;
     margin-bottom: 20px;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -100px;
+}
+
+.footer, .push {
+    height: 100px;
+}
