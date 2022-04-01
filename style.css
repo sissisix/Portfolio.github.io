@@ -23,3 +23,7 @@ html, body {
 .footer, .push {
     height: 100px;
 }
+
+body {
+    background-color: #D9D9D9;
+}
