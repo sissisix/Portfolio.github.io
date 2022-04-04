@@ -5,36 +5,41 @@
         <title>Portfolio Suzac Simon</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mukta:wght@300;400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
         <link href="css/real.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <script src="js/projet.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body class="degrade">
         <div class="wrapper">
             <header id="header"></header>
-            <div class="degrade">
-                <h1>Mes projets</h1>
+            <h1>MES PROJETS</h1>
                 
-                <table id="tableProjs" class="real"></table>
+            <table id="tableProjs" class="real"></table>
 
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <span class="close">&times;</span>
-                            <h2 id="modalTitle">Modal Header</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p id="modalBody">Some text in the Modal Body</p>
-                            <img id="modalImg" class="modal-img" src=""></img>
-                            <video id="modalVideo" controls class="modal-vid">
-                                
-                            </video>
-                        </div>
-                        <div class="modal-footer">
-                            <h4 id="modalFooter">Modal Footer</h3>
-                        </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <table>
+                            <tr>
+                                <td><h2 id="modalTitle"></h2></td>
+                                <td><p style="padding-left: 5px;" id="modalStat"></p></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-body">
+                        <p id="modalBody"></p>
+                        <img id="modalImg" class="modal-img" src=""></img>
+                        <video id="modalVideo" controls class="modal-vid">
+                            
+                        </video>
+                    </div>
+                    <div class="modal-footer">
+                        <h5 id="modalFooter"></h5>
+                        <p id="modalDate"></p>
                     </div>
                 </div>
             </div>
@@ -54,9 +59,11 @@
         var modal = document.getElementById("myModal");
         var modalTitle = document.getElementById("modalTitle");
         var modalBody = document.getElementById("modalBody");
+        var modalStat = document.getElementById("modalStat");
         var modalImg = document.getElementById("modalImg");
         var modalVideo = document.getElementById("modalVideo");
         var modalFooter = document.getElementById("modalFooter");
+        var modalDate = document.getElementById("modalDate");
 
         // Get the button that opens the modal
         //var btn = document.getElementById("myBtn");
@@ -79,6 +86,7 @@
         function qget(param) {
             modalTitle.innerHTML = proj.projets[param].name;
             modalBody.innerHTML = proj.projets[param].description;
+            modalStat.innerHTML = " - " + proj.projets[param].stat + " - Projet " + proj.projets[param].context;
             modalImg.src = proj.projets[param].imgUrl;
 
             if (proj.projets[param].vidUrl != "") {
@@ -92,8 +100,54 @@
                 modalVideo.style.visibility = "hidden";
                 modalVideo.style.height = "0px";
             }
+
+            var dat = proj.projets[param].date.split("_");
+            var year = dat[0];
+            var month = dat[1];
+
+            switch (dat[1]) {
+                case '01':
+                    month = "Janvier";
+                    break;
+                case '02':
+                    month = "Février";
+                    break;
+                case '03':
+                    month = "Mars";
+                    break;
+                case '04':
+                    month = "Avril";
+                    break;
+                case '05':
+                    month = "Mai";
+                    break;
+                case '06':
+                    month = "Juin";
+                    break;
+                case '07':
+                    month = "Juillet";
+                    break;
+                case '08':
+                    month = "Aout";
+                    break;
+                case '09':
+                    month = "Septembre";
+                    break;
+                case '10':
+                    month = "Octobre";
+                    break;
+                case '11':
+                    month = "Novembre";
+                    break;
+                case '12':
+                    month = "Decembre";
+                    break;
+                default:
+                    break;
+            }
             
-            modalFooter.innerHTML = proj.projets[param].date + "<br>" + proj.projets[param].footer;
+            modalFooter.innerHTML = proj.projets[param].footer;
+            modalDate.innerHTML = month + " " + year;
             
             modal.style.display = "block";
         }
