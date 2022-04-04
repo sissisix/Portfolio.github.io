@@ -4,7 +4,7 @@ var proj = {
     "maj": "2022_03_28",
     "projets": [
         {
-            "name": "L'équipe Explore",
+            "name": "L'Équipe Explore",
             "date": "2020_05",
             "state": "Fini",
             "context": "Personnel",
@@ -205,7 +205,6 @@ function initProj() {
             img.setAttribute('src', proj.projets[i].imgIcUrl);
         }
 
-        //img.setAttribute('src', proj.projets[i].imgIcUrl);
         img.setAttribute('alt', 'Avatar');
         img.setAttribute('onclick', 'qget(\'' + i + '\')');
 
@@ -219,7 +218,7 @@ function initProj() {
         }
     }
 
-    if ((proj.projets.length+1)%5 != 0) {
+    if ((proj.projets.length)%5 != 0) {
         tab.appendChild(tr);
     }
 }

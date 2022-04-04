@@ -6,8 +6,8 @@
 }
 
 footer {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    background: #eebc25;
 }
 
 html, body {
@@ -24,6 +24,8 @@ html, body {
     height: 206px;
 }
 
-body {
-    background-color: #D9D9D9;
+.degrade {
+    background: linear-gradient(to right, #ffffff 70%, #eebc25 30%);
 }
+
+/*background: linear-gradient(to bottom right, #ffefbe 50%, #eebc25 50%);*/

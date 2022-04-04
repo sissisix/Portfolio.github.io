@@ -1,10 +1,10 @@
 h1 {
     text-align: center;
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .real {
-    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -12,23 +12,22 @@ h1 {
 .realTd img {
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
+    border: 1px solid #1B363E;
     border-radius: 50%;
-    max-width: 150%;
-    max-height: 150%;
+    max-width: 100%;
+    max-height: 100%;
+    filter: blur(0px);
 }
 
 .real .realTr {
     display: block;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 .realTd:hover img {
-    filter: drop-shadow(0 -6mm 4mm rgb(238, 199, 153));
+    filter: blur(3px);
     cursor: pointer;
-}
-
-.realTr {
-    margin-top: 20px;
 }
 
 .realTd {
