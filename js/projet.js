@@ -4,6 +4,30 @@ var proj = {
     "maj": "2022_03_28",
     "projets": [
         {
+            "name": "Unbold Minded",
+            "date": "2022_03",
+            "stat": "Fini",
+            "context": "Scolaire",
+            "description": "Ce projet a pour but de faciliter la création et le partage d'expérimentation/d'étude (questionnaires, audios, vidéos etc ...). Pour cela, nous avons divisé le système en deux parties, une partie application mobile et une web. Le site web permet de configurer le programme, les notifications, les questionnaires de recherche, etc. et donc de s’adapter à une expérimentation donnée. C’est la partie à laquelle les administrateurs ont accès. D’autre part, une partie application pour smartphones permet aux destinataires de la formation de recevoir cette dernière et de participer à la recherche, selon une configuration donnée, prédéfinie par l’administrateur - expérimentateur.<br>Je suis arrivé au tout début du projet, pour un stage de fin de master, j'ai donc aidé Mme. Hagège (alors seul membre du projet) à concevoir le système. Elle m'a ensuite nommé directeur de la technologie et m'a lancé sur le développement mobile. Peu après, elle m'a donnée l'occasion de choisir plusieurs nouveaux collaborateurs parmit les demandes de stages qu'elle a reçu. Mme. Hagège m'a alors donnée la responsabilité de gérer cette équipe de cinq.",
+            "imgUrl": "src/projets/UnboldMinded.png",
+            "imgIcUrl": "src/icn/icn_projets/Icn_UnboldMinded.png",
+            "vidUrl": "",
+            "gifUrl": "",
+            "footer": "Réaliser en collaboration avec le <u>laboratoire FrED</u><br>Fait avec Android Studio, Xcode, Visual Studio et Symfony, en Html5, css, Php, Swift et Java"
+        },
+        {
+            "name": "Serious Seller",
+            "date": "2022_01",
+            "stat": "Fini",
+            "context": "Scolaire",
+            "description": "Ceci est un module d'autoformation permettant au joueur d'améliorer sa relation client tout en choisissant librement les compétences qu'il veut développer.<br>Nous avons fait en sorte qu'il y ait une bonne rejouabilité avec du feedback.<br>Ce module est composé de plusieurs mini-jeux aux gameplays simples et ludiques, tel qu'un Brick Breaker modifié, où à la place de renvoyer une balle pour détruire des briques, on renvoit des arguments pour satisfaire le client.<br>Mais la grosse partie de ce projet est le visual novel ! Celui-ci permet au joueur de mettre en pratique les compétences aquises dans les mini-jeux et dans les fiches de cours lu juste avant.",
+            "imgUrl": "src/projets/Editup.png",
+            "imgIcUrl": "src/icn/icn_projets/Icn_Editup.png",
+            "vidUrl": "",
+            "gifUrl": "",
+            "footer": "Réaliser en collaboration avec la <u>promo 4</u> du master AMINJ<br>Fait avec Unity"
+        },
+        {
             "name": "L'Équipe Explore",
             "date": "2020_05",
             "stat": "Fini",
@@ -13,7 +37,19 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_EquipeExplore.png",
             "vidUrl": "",
             "gifUrl": "",
-            "footer": "Lien article :<br>https://www.lequipe.fr/Medias/Actualites/Le-celsa-remporte-le-6e-prix-explore/1141167<br>Lien site web :<br>https://www.lequipe.fr/explore/hr14-surface-de-separation/"
+            "footer": "Réalisé en collaboration avec <u>Berg Valentin</u>, <u>Bouhadra Sylvia</u>, <u>Boulesteix Lise</u>, <u>Canier Auguste</u>, <u>Grange Adrien</u>, <u>Haefele Yann</u>, <u>Meynier Fiona</u> et <u>Talbi Timothée</u><br>Fait en html5, css et JS<br><a href='https://www.lequipe.fr/Medias/Actualites/Le-celsa-remporte-le-6e-prix-explore/1141167'>Voir article</a><br><a href='https://www.lequipe.fr/explore/hr14-surface-de-separation/'>Voir site web</a>"
+        },
+        {
+            "name": "Unison",
+            "date": "2021_05",
+            "stat": "Fini",
+            "context": "Scolaire",
+            "description": "UNISON est un jeu sérieux qui a pour but de sensibiliser sur divers dangers numériques. Pour ce prototype nous nous sommes concentrés sur le thème des Fake News, rendu célèbre par Donald Trump.<br>Une partie ce déroule en 5 étapes :<br> 1 - Un joueur lit le contexte de la situation et présente l'épreuve<br> 2 - Les joueurs doivent remporter les tests pour compléter la situation<br> 3 - Les points amassés par l'équipe sont comptabilisés et les erreurs expliquées<br> 4 - Un joueur lit la conclusion de la situation, l'équipe reçoit ou non un bonus<br> 5 - On repart au point 1 jusqu'a la situation finale.",
+            "imgUrl": "src/projets/Unison.png",
+            "imgIcUrl": "src/icn/icn_projets/Icn_Unison.png",
+            "vidUrl": "",
+            "gifUrl": "",
+            "footer": "Réalisé en collaboration avec <u>Haye Arthur</u>, <u>Liger Gwen</u>, <u>Maze Christophe</u> et <u>Sarre Joshua</u><br>Fait avec Unity"
         },
         {
             "name": "Youstiti",
@@ -25,7 +61,18 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_Youstiti.png",
             "vidUrl": "",
             "gifUrl": "",
-            "footer": ""
+            "footer": "Réalisé avec la <u>SAS Youstiti</u><br>Fait avec Android Studio et en python"
+        },{
+            "name": "Master Chef",
+            "date": "2021_02",
+            "stat": "Fini",
+            "context": "Scolaire",
+            "description": "Création d'un jeu permettant de faire une recette de pain d'épice. Cela pour nous permettre de mieux utiliser le json.",
+            "imgUrl": "src/projets/MasterChef.png",
+            "imgIcUrl": "src/icn/icn_projets/Icn_MasterChef.png",
+            "vidUrl": "",
+            "gifUrl": "",
+            "footer": "Fait en JS avec Phaser"
         },
         {
             "name": "ULR Loc'Salle",
@@ -37,7 +84,7 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_Ulr.png",
             "vidUrl": "",
             "gifUrl": "",
-            "footer": ""
+            "footer": "Fait avec Android Studio"
         },
         {
             "name": "Snake",
@@ -49,7 +96,19 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_Snake.png",
             "vidUrl": "",
             "gifUrl": "",
-            "footer": ""
+            "footer": "Fait avec Android Studio"
+        },
+        {
+            "name": "Burry me my Love",
+            "date": "2021_03",
+            "stat": "Fini",
+            "context": "Scolaire",
+            "description": "L'objectif de ce mini-jeu était de promouvoir le jeu « Bury me, my love » en appuyant the Pixel Hunt dans la sensibilisation et l’information du public aux phénomènes de migrations grâce à des sources fiables (L’agence des Nations Unies pour les réfugiés) et un scoring adapté.<br>Pour cela, nous avons développé un jeu de recherche, ou le joueur doit trouver un témoin. Chaque personnage rencontré aura un discours différent. Il faudra démêler le vrai du faux !",
+            "imgUrl": "src/projets/BurryMeMyLove.png",
+            "imgIcUrl": "src/icn/icn_projets/Icn_BurryMeMyLove.png",
+            "vidUrl": "",
+            "gifUrl": "",
+            "footer": "Réalisé en collaboration avec <u>De Brauwer Line</u> et <u>Mawet Priscillien</u><br>Fait avec Unity et Scorm"
         },
         {
             "name": "Tetris",
@@ -61,7 +120,7 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_Tetris.png",
             "vidUrl": "",
             "gifUrl": "",
-            "footer": ""
+            "footer": "Fait avec Construct 2"
         },
         {
             "name": "Hamster Life",
@@ -73,7 +132,7 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_Hamster.png",
             "vidUrl": "",
             "gifUrl": "",
-            "footer": ""
+            "footer": "Fait avec Construct 2"
         },
         {
             "name": "Chifoumi",
@@ -85,7 +144,7 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_PvsC.png",
             "vidUrl": "",
             "gifUrl": "",
-            "footer": ""
+            "footer": "Fait en C++ et avec wx-widget"
         },
         {
             "name": "Slot Machine",
@@ -97,7 +156,7 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_Chance.png",
             "vidUrl": "",
             "gifUrl": "",
-            "footer": ""
+            "footer": "Fait en Python et Qt"
         },
         {
             "name": "Light-minded",
@@ -109,7 +168,7 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_Light.png",
             "vidUrl": "",
             "gifUrl": "",
-            "footer": "https://globalgamejam.org/2021/games/light-minded-6"
+            "footer": "Réalisé en collaboration avec <u>Aghilone Skander</u>, <u>Casedevant Grégoire</u>, <u>Haye Arthur</u> et <u>Liger Gwenaël</u><br>Fait avec Unity<br><a href='https://globalgamejam.org/2021/games/light-minded-6'>Télécharger jeu</a>"
         },
         {
             "name": "Run A Round",
@@ -121,7 +180,7 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_Run.png",
             "vidUrl": "",
             "gifUrl": "",
-            "footer": ""
+            "footer": "Réalisé en collaboration avec <u>De Brauwer Line</u> et <u>Miramond François</u><br>Fait avec Unity<br><a href='https://view.genial.ly/60733b9d69b48f0d18cbf407/guide-run-a-round'>Voir présentation genially</a>"
         },
         {
             "name": "Spaaaaace",
@@ -133,7 +192,7 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_Space.png",
             "vidUrl": "",
             "gifUrl": "",
-            "footer": ""
+            "footer": "Fait avec Unity"
         },
         {
             "name": "Metro",
@@ -145,7 +204,7 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_Metro.png",
             "vidUrl": "",
             "gifUrl": "",
-            "footer": ""
+            "footer": "Fait en C"
         },
         {
             "name": "Marching Square",
@@ -157,7 +216,7 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_Square.png",
             "vidUrl": "",
             "gifUrl": "",
-            "footer": ""
+            "footer": "Fait en C"
         },
         {
             "name": "Météo",
@@ -169,7 +228,7 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_Vent.png",
             "vidUrl": "",
             "gifUrl": "",
-            "footer": ""
+            "footer": "Fait en C"
         },
         {
             "name": "EDF Flower",
@@ -181,7 +240,7 @@ var proj = {
             "imgIcUrl": "src/icn/icn_projets/Icn_FleurEdf.png",
             "vidUrl": "src/videos/FleurEdf.mp4",
             "gifUrl": "src/gifs/FleurEdf.gif",
-            "footer": ""
+            "footer": "Fait avec Blender"
         }
     ]
 }
